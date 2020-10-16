@@ -1,5 +1,6 @@
 import React from 'react';
-
+import ChartComponent from '../ChartComponent/ChartComponent'
+import D3Component from '../D3Component/D3Component';
 function HomePage() {
   return (
     <div className="container center">
@@ -57,6 +58,7 @@ function HomePage() {
             <h1>CHART</h1>
             <p>
                 <canvas id="myChart" width="200" height="200"></canvas>
+                <ChartComponent/>
             </p>
             <br/>
 
@@ -64,7 +66,9 @@ function HomePage() {
             <article className="">
             <h1>D3JS Chart</h1>
             <br/>
-            <div id="chart" className = "dchart"></div>  
+            <div id="chart" className = "dchart">
+            <D3Component/>
+            </div>  
         </article>
         </div>
     </div>
