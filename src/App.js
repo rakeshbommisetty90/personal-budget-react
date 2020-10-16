@@ -18,7 +18,7 @@ function App() {
     <Router>
       <Menu/>
       <Hero/>
-      <div class="mainContainer">
+      <div className="mainContainer">
         <Switch>
           <Route path='/about'>
             <AboutPage/>

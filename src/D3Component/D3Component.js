@@ -1,7 +1,7 @@
 import * as d3 from 'd3';
 import React, { useEffect } from 'react';
 import axios from 'axios';
-import Chart from 'chart.js';
+//import Chart from 'chart.js';
 
 
 function D3Component(){
@@ -25,13 +25,13 @@ function D3Component(){
         labels: []
     };
 
-    function createChart(){
+ /*   function createChart(){
         var ctx=document.getElementById("myChart").getContext("2d");
         var pieChart=new Chart(ctx,{
             type:"pie",
             data:dataSource
         });
-    };
+    };*/
 
     useEffect(()=>{
         axios.get('http://localhost:3001/budget')
